@@ -16,5 +16,22 @@ namespace FrenchGame
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Exit the program
+            //Drag the program out of RAM by its ear and blow its brains all over the cache
+            KillMeNow();
+        }
+
+        public void KillMeNow()
+        {
+            Close();
+        }
     }
 }
