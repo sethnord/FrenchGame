@@ -1,0 +1,234 @@
+<xml>
+    <Game1>
+     <Version1>
+        <Box1>
+            Un clavier
+        </Box1>
+        <Box2>
+            Un e-mail
+        </Box2>
+        <Box3>
+           Un écran
+        </Box3>
+        <Box4>
+           Une imprimante
+        </Box4>
+        <Box5>
+           Un moniteur
+        </Box5>
+        <Box6>
+           Un logiciel
+        </Box6>
+        <Box7>
+           Un mot de passe
+        </Box7>
+        <Box8>
+           Une souris
+        </Box8>
+        <Box9>
+           Un fichier
+        </Box9>
+        <Box10>
+           Un site web
+        </Box10>
+        <Box11>
+           Une page d'accueil
+        </Box11>
+        <Box12>
+           Un jeu vidéo
+        </Box12>
+     </version1>
+    </Game1>
+    <Game2>
+     <Version1>
+        <Question1>
+            Traduisez la phrase "We discovered a good software program."
+        </Question1>
+        <Correct>
+            Nous avons découvert un bon logiciel.
+        </Correct>
+        <Wrong1>
+            Vous étes découverts un bon logiciel.
+        </Wrong1>
+        <Wrong2>
+            Nous doffrons une bonne fichier. 
+        </Wrong2>
+        <Wrong3>
+            Nous sommes décourvert un bon fichier.
+        </Wrong3>
+        <Question2>
+            Traduisez la phrase "You are suffering because you did not save."
+        </Question2>
+        <Correct>
+            Tu souffres parce que tu n'a sauvegardé pas.
+        </Correct>
+        <Wrong1>
+            Tu suffre parce qu'il n'y a pas de sauvegarder.
+        </Wrong1>
+        <Wrong2>
+             Il ne souffre pas parce qu'il a sauvegarde.
+        </Wrong2>
+        <Wrong3>
+            Tu souffrir parce que tu ne sauvegarde pas.
+        </Wrong3>
+        <Question3>
+            Conjuguez la verbe "démarrer."
+        </Question3>
+        <Correct>
+            Je démarre; tu démarres; il démarre; nous démarrons; vous démarrez; ils démarrent
+        </Correct>
+        <Wrong1>
+            Je démarre; tu démarres; il démarre; nous démarrissons; vous démarrez; ils démarrent
+        </Wrong1>
+        <Wrong2>
+             Je démarres; tu démarres; il démarre; nous démarrons; vous démarrez; ils démarrent
+        </Wrong2>
+        <Wrong3>
+            Je démare; tu démares; il démare; nous démarons; vous démarez; ils démarent
+        </Wrong3>
+        <Question4>
+            Comment parle-on "to download" en français?
+        </Question4>
+        <Correct>
+            Télécharger
+        </Correct>
+        <Wrong1>
+            Imprimer
+        </Wrong1>
+        <Wrong2>
+             Découvrir
+        </Wrong2>
+        <Wrong3>
+            Démarrer
+        </Wrong3>
+        <Question5> 
+            Comment parle-on "your hard drive" en français?
+        </Question5>
+        <Correct>
+            Votre disque-dur
+        </Correct>
+        <Wrong1>
+            Ta disque-dur
+        </Wrong1>
+        <Wrong2>
+             Son logiciel
+        </Wrong2>
+        <Wrong3>
+            Sa logiciel
+        </Wrong3>
+        <Question6>
+            Conjuguez la verbe "offrir."
+        </Question6>
+        <Correct>
+            J'offre; tu offres; il offre; nous offrons; vous offrez; ils offrent
+        </Correct>
+        <Wrong1>
+            J'ofre; tu ofres; il ofre; nous ofrissons; vous ofrez; ils ofrent
+        </Wrong1>
+        <Wrong2>
+             J'offres; tu offres; il offre; nous offrons; vous offrez; ils offrent
+        </Wrong2>
+        <Wrong3>
+            Je m'offre; tu t'offres; il s'offre; nous nous offrons; vous vous offrez; ils s'offrent
+        </Wrong3>
+        <Question7>
+            Comment parle-on "to record/burn a CD" en français?
+        </Question7>
+        <Correct>
+            Graver
+        </Correct>
+        <Wrong1>
+            couvrir
+        </Wrong1>
+        <Wrong2>
+             fichier
+        </Wrong2>
+        <Wrong3>
+            garder
+        </Wrong3>
+        <Question8>
+           Traduisez la phrase "They surf the Internet often at your house."
+        </Question8>
+        <Correct>
+            Elles surfent sur Internet souvent chez-toi.
+        </Correct>
+        <Wrong1>
+            Elles Internet-surfent souvent chez-toi.
+        </Wrong1>
+        <Wrong2>
+             Elles surfent dans l'Internet souvent chez-toi.
+        </Wrong2>
+        <Wrong3>
+            Elles surfent pour l'Internet souvent chez-toi.
+        </Wrong3>
+        <Question9>
+            Qu'est-ce qu'une souris?
+        </Question9>
+        <Correct>
+            A mouse
+        </Correct>
+        <Wrong1>
+            A keyboard
+        </Wrong1>
+        <Wrong2>
+             A service
+        </Wrong2>
+        <Wrong3>
+            A hard drive
+        </Wrong3>
+        <Question10>
+            Comment parle-on "être en ligne"?
+        </Question10>
+        <Correct>
+            To be online
+        </Correct>
+        <Wrong1>
+            To be connected
+        </Wrong1>
+        <Wrong2>
+             To save
+        </Wrong2>
+        <Wrong3>
+            To download
+        </Wrong3>
+        <Question11>
+            Traduisez la phrase "I saved my video game twice."
+        </Question11>
+        <Correct>
+            J'ai sauvegardé mon jeu vidéo deux fois.
+        </Correct>
+        <Wrong1>
+            Je suis sauvegardé mon jeu vidéo deux fois.
+        </Wrong1>
+        <Wrong2>
+             J'ai sauvegardée ma jeu vidéo deux fois.
+        </Wrong2>
+        <Wrong3>
+            J'ai sauvegarderais mon jeu vidéo deux fois.
+        </Wrong3>
+        <Question12>
+            Conjuguez la verbe "To open."
+        </Question12>
+        <Correct>
+            J'ouvre; tu ouvres; il ouvre; nous ouvrons; vous ouvrez; ils ouvrent
+        </Correct>
+        <Wrong1>
+            Je ouvre; tu ouvres; il ouvre; nous ouvrons; vous vouvrez; ils ouvrent
+        </Wrong1>
+        <Wrong2>
+             J'ouvris; tu ouvres; il ouvrent; nous ouvrissons; vous ouvrez; ils ouvrent
+        </Wrong2>
+        <Wrong3>
+            Je couvre; tu couvres; il couvre; nous couvrons; vous couvrez; ils couvrent
+        </Wrong3>
+        </version1>
+    <Game3>
+        <Box1>
+        </Box1>
+        <Box2>
+        </Box2>
+        <Box3>
+        </Box3>
+     </version1>
+    </Game2>
+</xml>
