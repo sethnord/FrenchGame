@@ -222,13 +222,229 @@
             Je couvre; tu couvres; il couvre; nous couvrons; vous couvrez; ils couvrent
         </Wrong3>
         </version1>
+    </Game2>
     <Game3>
+        <version1>
         <Box1>
+            Un appareil-photo
         </Box1>
         <Box2>
+            Un baladeur
         </Box2>
         <Box3>
+            Une caméra vidéo
         </Box3>
-     </version1>
-    </Game2>
+        <Box4>
+            Une cassette vidéo
+        </Box4>
+        <Box5>
+            Une chaîne de télé
+        </Box5>
+        <Box6>
+            Une chaîne steréo
+        </Box6>
+        <Box7>
+            Un fax
+        </Box7>
+        <Box8>
+            Un lecteur de CD
+        </Box8>
+        <Box9>
+            Un répondeur téléphonique
+        </Box9>
+        <Box10>
+            Un télécommande
+        </Box10>
+        <Box11>
+            Un portable
+        </Box11>
+        <Box12>
+            Un poste de télé
+        </Box12>
+        </version1>
+   </Game3>
+   <Game4>
+       <version1>
+            <Question1>
+            Traduisez la phrase "You didn't turn on your CD player?"
+        </Question1>
+        <Correct>
+            Est-ce que tu n'as pas allumé ton baladeur?
+        </Correct>
+        <Wrong1>
+            Est-ce que tu n'est pas allumé ta chaine stereo?
+        </Wrong1>
+        <Wrong2>
+            Est-ce que tu n'as pas allumé ton portable?
+        </Wrong2>
+        <Wrong3>
+            Est-ce que tu n'allumes pas ton baladeur?
+        </Wrong3>
+           <Question2>
+            
+        </Question2>
+        <Correct>
+            
+        </Correct>
+        <Wrong1>
+            
+        </Wrong1>
+        <Wrong2>
+             
+        </Wrong2>
+        <Wrong3>
+            
+        </Wrong3>
+        <Question3>
+            Conjuguez la verbe "fermer."
+        </Question3>
+        <Correct>
+            Je ferme; tu fermes; il ferme; nous fermons; vous fermez; ils ferment
+        </Correct>
+        <Wrong1>
+            Je fermes; tu fermes; il fermse; nous fermions; vous fermez; ils fermant
+        </Wrong1>
+        <Wrong2>
+             Je ferme; tu fermes; il ferme; nous fermissons; vous formez; ils fent
+        </Wrong2>
+        <Wrong3>
+            Je ferm; tu ferms; il ferm; nous fermens; vous fermez; ils ferment
+        </Wrong3>
+        <Question4>
+            Comment parle-on " a tape recorder" en français?
+        </Question4>
+        <Correct>
+            Un magnétophone
+        </Correct>
+        <Wrong1>
+            Un magnetoscope
+        </Wrong1>
+        <Wrong2>
+             Une cassette baladeur
+        </Wrong2>
+        <Wrong3>
+            Un portable
+        </Wrong3>
+        <Question5> 
+            Comment parle-on "my stereo system" en français?
+        </Question5>
+        <Correct>
+            Ma chaîne steréo
+        </Correct>
+        <Wrong1>
+            Mon chaine stereo
+        </Wrong1>
+        <Wrong2>
+            Une chaîne steréo
+        </Wrong2>
+        <Wrong3>
+            Me chaine stereo
+        </Wrong3>
+        <Question6>
+            Conjuguez la verbe "Enregistrer."
+        </Question6>
+        <Correct>
+            J'enregistre; tu enregistres; il enregistre; nous enregistrons; vous enregistrez; ils enregistrent
+        </Correct>
+        <Wrong1>
+            J'enregistres; tu enregistres; il enregistre; nous enregistrissons; vous enregistrez; ils enregistrent
+        </Wrong1>
+        <Wrong2>
+             J'enregiste; tu enregistes; il enregiste; nous enregistons; vous enregistez; ils enregistent
+        </Wrong2>
+        <Wrong3>
+            J'enregis; tu enregis; il enregist; nous enregisons; vous enregisez; ils enregisent
+        </Wrong3>
+        <Question7>
+            Comment parle-on "to turn on the television" en français?
+        </Question7>
+        <Correct>
+            Allumer le télé
+        </Correct>
+        <Wrong1>
+            Effacer la télécommande
+        </Wrong1>
+        <Wrong2>
+             Allumer le répondeur
+        </Wrong2>
+        <Wrong3>
+            Effacer le lecteur
+        </Wrong3>
+        <Question8>
+           Traduisez la phrase "Her cell phone is ringing."
+        </Question8>
+        <Correct>
+            Son portable sonne.
+        </Correct>
+        <Wrong1>
+            Sa portable sonne
+        </Wrong1>
+        <Wrong2>
+             Sa portable est sonne
+        </Wrong2>
+        <Wrong3>
+            Elle's portable est sonne
+        </Wrong3>
+        <Question9>
+            Qu'est-ce qu'un poste de télé?
+        </Question9>
+        <Correct>
+            A TV set
+        </Correct>
+        <Wrong1>
+            A TV screen
+        </Wrong1>
+        <Wrong2>
+             A TV remote
+        </Wrong2>
+        <Wrong3>
+            A stereo system
+        </Wrong3>
+        <Question10>
+            Comment parle-on "éteindre"?
+        </Question10>
+        <Correct>
+            To turn off
+        </Correct>
+        <Wrong1>
+            To close
+        </Wrong1>
+        <Wrong2>
+             To ring
+        </Wrong2>
+        <Wrong3>
+            To turn on
+        </Wrong3>
+        <Question11>
+            Traduisez la phrase "Our answering machine doesn't work."
+        </Question11>
+        <Correct>
+            Notre répondeur ne marche pas.
+        </Correct>
+        <Wrong1>
+            Nous poste répondeur ne marche pas.
+        </Wrong1>
+        <Wrong2>
+             Son répondeur ne fonctionne pas
+        </Wrong2>
+        <Wrong3>
+            Votre répondeur ne fonctionne.
+        </Wrong3>
+        <Question12>
+            Conjuguez la verbe "to dial."
+        </Question12>
+        <Correct>
+            Je compose; tu composes; il compose; nous composons; vous composez; ils composent
+        </Correct>
+        <Wrong1>
+            Je composes; tu composes; il compose; nous composons; vous composez; ils composent
+        </Wrong1>
+        <Wrong2>
+             Je compose; tu composes; il compose; nous composissons; vous composez; ils composent
+        </Wrong2>
+        <Wrong3>
+            Je compos; tu composes; il compos; nous composons; vous composez; ils composent
+        </Wrong3>
+       </version1>
+   </Game4>
 </xml>
