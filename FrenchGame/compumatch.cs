@@ -16,8 +16,20 @@ namespace FrenchGame
 {
     public partial class compumatch : Form
     {
+        string[] scores = new string[5];
+        int scInd = 0;
 
         float _time = 0.0f;
+
+        int[] ranArray = new int[5];
+        int[] imgs = new int[5];
+
+        string p1Name;
+        string p2Name;
+        string p3Name;
+        string p4Name;
+        string p5Name;
+        int numPlayers;
 
         public compumatch()
         {
@@ -28,6 +40,13 @@ namespace FrenchGame
             int[] images = LoadFromXML();
             LoadImages(images); //Load the images.
             playerTime.Enabled = true;
+
+            p1Name = Form1._pl1Name;
+            p2Name = Form1._pl2Name;
+            p3Name = Form1._pl3Name;
+            p4Name = Form1._pl4Name;
+            p5Name = Form1._pl5Name;
+            numPlayers = Form1._numPlayers;
         }
 
        
@@ -35,7 +54,7 @@ namespace FrenchGame
         private int[] LoadFromXML()
         {
             Random r = new Random();
-            int[] imgs = new int[5];
+            
 
             for (int i = 0; i < 5; i++)
             {
@@ -47,6 +66,10 @@ namespace FrenchGame
                         while(j == random)
                         {
                             random = r.Next(1,12);
+                            if(random != j)
+                            {
+                                break;
+                            }
                         }
                         imgs[i] = random;
                     }
@@ -163,36 +186,61 @@ namespace FrenchGame
         private void LoadImages(int[] img)
         {
             //Start from 5 and go to 1.
-            pictureBox5.Image = Image.FromFile("0" + img[0].ToString() + ".jpg");
-            pictureBox4.Image = Image.FromFile("0" + img[1].ToString() + ".jpg");
-            pictureBox3.Image = Image.FromFile("0" + img[2].ToString() + ".jpg");
-            pictureBox2.Image = Image.FromFile("0" + img[3].ToString() + ".jpg");
-            pictureBox1.Image = Image.FromFile("0" + img[4].ToString() + ".jpg");
-        }
 
+            pictureBox5.Image = Image.FromFile("0" + img[0].ToString() + ".jpg");
+            pictureBox4.Image = Image.FromFile("0" + img[4].ToString() + ".jpg");
+            pictureBox3.Image = Image.FromFile("0" + img[2].ToString() + ".jpg");
+            pictureBox2.Image = Image.FromFile("0" + img[1].ToString() + ".jpg");
+            pictureBox1.Image = Image.FromFile("0" + img[3].ToString() + ".jpg");
+        }
+        //1,5,3,2,4
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox5.Visible)
+            {
+                button1.BackColor = Color.Green;
+                pictureBox5.Visible = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox2.Visible)
+            {
+                button2.BackColor = Color.Green;
+                pictureBox2.Visible = false;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox3.Visible)
+            {
+                button3.BackColor = Color.Green;
+                pictureBox3.Visible = false;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox1.Visible)
+            {
+                button4.BackColor = Color.Green;
+                pictureBox1.Visible = false;
+                //This is the last one, so stop the clock
+                playerTime.Enabled = false;
+                scores[scInd] = timerLabel.Text;
+                scInd++;
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox4.Visible)
+            {
+                button5.BackColor = Color.Green;
+                pictureBox4.Visible = false;
+            }
         }
     }
 }

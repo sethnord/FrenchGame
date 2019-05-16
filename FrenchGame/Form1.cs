@@ -16,12 +16,12 @@ namespace FrenchGame
     {
         int _selGame = -1; //If it stays -1, something went wrong.
 
-        string _pl1Name = "Player 1 Didn't Enter A Name";
-        string _pl2Name = "Player 2 Didn't Enter A Name";
-        string _pl3Name = "Player 3 Didn't Enter A Name";
-        string _pl4Name = "Player 4 Didn't Enter A Name";
-        string _pl5Name = "Player 5 Didn't Enter A Name";
-        int _numPlayers = 1;
+        public static string _pl1Name = "Player 1 Didn't Enter A Name";
+        public static string _pl2Name = "Player 2 Didn't Enter A Name";
+        public static string _pl3Name = "Player 3 Didn't Enter A Name";
+        public static string _pl4Name = "Player 4 Didn't Enter A Name";
+        public static string _pl5Name = "Player 5 Didn't Enter A Name";
+        public static int _numPlayers = 1;
 
         public Form1()
         {
@@ -85,8 +85,8 @@ namespace FrenchGame
         private void button3_Click(object sender, EventArgs e)
         {
             //L'ordianteur labelling
-            compumatch f = new compumatch();
-            f.Show();
+            _selGame = 2;
+            PlayGame(_selGame);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -298,6 +298,8 @@ namespace FrenchGame
                         break;
                     case 2:
                         //L'Ordinateur labelling
+                        compumatch f = new compumatch();
+                        f.Show();
                         break;
                     case 3:
                         //L'Ordinateur translate
