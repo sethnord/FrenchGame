@@ -46,7 +46,7 @@
             this.timerLabel.BackColor = System.Drawing.Color.Red;
             this.timerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timerLabel.ForeColor = System.Drawing.Color.White;
-            this.timerLabel.Location = new System.Drawing.Point(631, 17);
+            this.timerLabel.Location = new System.Drawing.Point(865, 12);
             this.timerLabel.Name = "timerLabel";
             this.timerLabel.Size = new System.Drawing.Size(75, 32);
             this.timerLabel.TabIndex = 4;
@@ -59,45 +59,45 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(36, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 40);
+            this.button1.Size = new System.Drawing.Size(132, 54);
             this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(133, 12);
+            this.button2.Location = new System.Drawing.Point(202, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 40);
+            this.button2.Size = new System.Drawing.Size(132, 54);
             this.button2.TabIndex = 6;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(254, 12);
+            this.button3.Location = new System.Drawing.Point(363, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 40);
+            this.button3.Size = new System.Drawing.Size(132, 54);
             this.button3.TabIndex = 7;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(377, 12);
+            this.button4.Location = new System.Drawing.Point(530, 12);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 40);
+            this.button4.Size = new System.Drawing.Size(132, 54);
             this.button4.TabIndex = 8;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(497, 12);
+            this.button5.Location = new System.Drawing.Point(691, 12);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 40);
+            this.button5.Size = new System.Drawing.Size(132, 54);
             this.button5.TabIndex = 9;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 72);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(694, 426);
+            this.pictureBox1.Size = new System.Drawing.Size(939, 426);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 908);
+            this.ClientSize = new System.Drawing.Size(963, 908);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

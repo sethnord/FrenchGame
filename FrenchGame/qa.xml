@@ -1,43 +1,19 @@
 <xml>
     <Game0>
      <Version1>
-        <Box1>
-            Un clavier
-        </Box1>
-        <Box2>
-            Un e-mail
-        </Box2>
-        <Box3>
-           Un écran
-         </Box3>
-        <Box4>
-           Une imprimante
-        </Box4>
-        <Box5>
-           Un moniteur
-        </Box5>
-        <Box6>
-           Un logiciel
-        </Box6>
-        <Box7>
-           Un mot de passe
-        </Box7>
-        <Box8>
-           Une souris
-        </Box8>
-        <Box9>
-           Un fichier
-        </Box9>
-        <Box10>
-           Un site web
-        </Box10>
-        <Box11>
-           Une page d'accueil
-        </Box11>
-        <Box12>
-           Un jeu vidéo
-        </Box12>
-     </version1>
+        <Box1>Un clavier</Box1>
+        <Box2>Un e-mail</Box2>
+        <Box3>Un écran</Box3>
+        <Box4>Une imprimante</Box4>
+        <Box5>Un moniteur</Box5>
+        <Box6>Un logiciel</Box6>
+        <Box7>Un mot de passe</Box7>
+        <Box8>Une souris</Box8>
+        <Box9>Un fichier</Box9>
+        <Box10>Un site web</Box10>
+        <Box11>Une page d'accueil</Box11>
+        <Box12>Un jeu vidéo</Box12>
+     </Version1>
     </Game0>
     <Game1>
      <Version1>
@@ -221,10 +197,10 @@
         <Wrong3>
             Je couvre; tu couvres; il couvre; nous couvrons; vous couvrez; ils couvrent
         </Wrong3>
-        </version1>
+        </Version1>
     </Game1>
     <Game2>
-        <version1>
+        <Version1>
         <Box1>
             Un appareil-photo
         </Box1>
@@ -261,10 +237,10 @@
         <Box12>
             Un poste de télé
         </Box12>
-        </version1>
+        </Version1>
    </Game2>
    <Game3>
-       <version1>
+       <Version1>
             <Question1>
             Traduisez la phrase "You didn't turn on your CD player?"
         </Question1>
@@ -445,6 +421,6 @@
         <Wrong3>
             Je compos; tu composes; il compos; nous composons; vous composez; ils composent
         </Wrong3>
-       </version1>
+       </Version1>
    </Game3>
 </xml>
