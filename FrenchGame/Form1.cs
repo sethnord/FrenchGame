@@ -106,13 +106,14 @@ namespace FrenchGame
         {
             //Random
             _selGame = GetRan();
+            
             PlayGame(_selGame);
         }
 
         private int GetRan()
         {
             Random ran = new Random();
-            int toReturn = ran.Next(0, 3);
+            int toReturn = ran.Next(1, 2);
             return toReturn;
         }
 
@@ -344,9 +345,9 @@ namespace FrenchGame
             numericUpDown1.Show();
             label3.Show();
             button1.Show();
-            button2.Show();
+            //button2.Show();
             button3.Show();
-            button4.Show();
+            //button4.Show();
             button5.Show();
             button9.Show();
 
