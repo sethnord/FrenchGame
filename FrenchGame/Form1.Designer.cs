@@ -51,6 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +115,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // button2
             // 
@@ -197,6 +199,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "Leaderboard";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBox2
             // 
@@ -301,12 +304,23 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Enter Player Names:";
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(13, 359);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(107, 43);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Credits";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(620, 423);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button6);
@@ -365,6 +379,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button9;
     }
 }
 
