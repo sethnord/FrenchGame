@@ -227,9 +227,9 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(48, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 25);
+            this.label4.Size = new System.Drawing.Size(95, 25);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Player 1:";
+            this.label4.Text = "Joueur 1:";
             // 
             // label5
             // 
@@ -238,9 +238,9 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(48, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 25);
+            this.label5.Size = new System.Drawing.Size(95, 25);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Player 2:";
+            this.label5.Text = "Joueur 2:";
             // 
             // label6
             // 
@@ -249,9 +249,9 @@
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(48, 202);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 25);
+            this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Player 3:";
+            this.label6.Text = "Joueur 3:";
             // 
             // label7
             // 
@@ -260,9 +260,9 @@
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(48, 256);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 25);
+            this.label7.Size = new System.Drawing.Size(95, 25);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Player 4:";
+            this.label7.Text = "Joueur 4:";
             // 
             // label8
             // 
@@ -271,9 +271,9 @@
             this.label8.ForeColor = System.Drawing.Color.Red;
             this.label8.Location = new System.Drawing.Point(48, 310);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 25);
+            this.label8.Size = new System.Drawing.Size(95, 25);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Player 5:";
+            this.label8.Text = "Joueur 5:";
             // 
             // button8
             // 
@@ -290,11 +290,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(231, 66);
+            this.label9.Location = new System.Drawing.Point(200, 64);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 25);
+            this.label9.Size = new System.Drawing.Size(257, 25);
             this.label9.TabIndex = 22;
-            this.label9.Text = "Enter Player Names:";
+            this.label9.Text = "Entrez les noms des joueurs";
             // 
             // button9
             // 
@@ -302,7 +302,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(107, 43);
             this.button9.TabIndex = 23;
-            this.button9.Text = "Credits";
+            this.button9.Text = "Les Credits";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
