@@ -26,6 +26,7 @@ namespace FrenchGame
                 "The player that can identify all 5 images the fastest is the winner.", "Instructions:", MessageBoxButtons.OK);
             //Select 5 random images and answers
             int[] images = LoadFromXML();
+            LoadImages(images); //Load the images.
             playerTime.Enabled = true;
         }
 
@@ -34,11 +35,26 @@ namespace FrenchGame
         private int[] LoadFromXML()
         {
             Random r = new Random();
-            int[] imgs = new int[4];
+            int[] imgs = new int[5];
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
-                imgs[i] = r.Next(1, 12); //There is a really good chance that we are going to get a duplicate, but at this point i'm getting concerned about finishing this in time, so...
+                int random = r.Next(1, 12);
+                foreach(int j in imgs)
+                {
+                    if(j == random)
+                    {
+                        while(j == random)
+                        {
+                            random = r.Next(1,12);
+                        }
+                        imgs[i] = random;
+                    }
+                    else
+                    {
+                        imgs[i] = random;
+                    }
+                }
             }
             XmlDocument qa = new XmlDocument();
             qa.Load("qa.xml");
@@ -69,10 +85,9 @@ namespace FrenchGame
             string box12 = Box12.InnerText;
 
             //Populate the buttons, and return an array of image numbers
-            int x = 1;
-            foreach (int i in imgs)
+            for (int x = 1; x < 6; x++)
             {
-                switch (i)
+                switch (imgs[x-1])
                 {
                     case 1:
                         PopulateButton(box1, x);
@@ -111,7 +126,6 @@ namespace FrenchGame
                         PopulateButton(box12, x);
                         break;
                 }
-                x++;
             }
 
             return imgs;
@@ -142,7 +156,43 @@ namespace FrenchGame
                 case 5:
                     button5.Text = whattoSay;
                     break;
-            }
+            }    
+        }
+
+
+        private void LoadImages(int[] img)
+        {
+            //Start from 5 and go to 1.
+            pictureBox5.Image = Image.FromFile("0" + img[0].ToString() + ".jpg");
+            pictureBox4.Image = Image.FromFile("0" + img[1].ToString() + ".jpg");
+            pictureBox3.Image = Image.FromFile("0" + img[2].ToString() + ".jpg");
+            pictureBox2.Image = Image.FromFile("0" + img[3].ToString() + ".jpg");
+            pictureBox1.Image = Image.FromFile("0" + img[4].ToString() + ".jpg");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
