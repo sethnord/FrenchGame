@@ -51,6 +51,12 @@
     <Compile Include="compumatch.Designer.cs">
       <DependentUpon>compumatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="electromatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electromatch.Designer.cs">
+      <DependentUpon>electromatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="compumatch.resx">
       <DependentUpon>compumatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electromatch.resx">
+      <DependentUpon>electromatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

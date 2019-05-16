@@ -199,48 +199,24 @@
         </Wrong3>
         </Version1>
     </Game1>
-    <Game2>
-        <Version1>
-        <Box1>
-            Un appareil-photo
-        </Box1>
-        <Box2>
-            Un baladeur
-        </Box2>
-        <Box3>
-            Une caméra vidéo
-        </Box3>
-        <Box4>
-            Une cassette vidéo
-        </Box4>
-        <Box5>
-            Une chaîne de télé
-        </Box5>
-        <Box6>
-            Une chaîne steréo
-        </Box6>
-        <Box7>
-            Un fax
-        </Box7>
-        <Box8>
-            Un lecteur de CD
-        </Box8>
-        <Box9>
-            Un répondeur téléphonique
-        </Box9>
-        <Box10>
-            Un télécommande
-        </Box10>
-        <Box11>
-            Un portable
-        </Box11>
-        <Box12>
-            Un poste de télé
-        </Box12>
-        </Version1>
-   </Game2>
+<Game2>
+<Version1>
+<Box1>Un appareil-photo</Box1>
+<Box2>Un baladeur</Box2>
+<Box3>Une caméra vidéo</Box3>
+<Box4>Une cassette vidéo</Box4>
+<Box5> Une chaîne de télé</Box5>
+<Box6>Une chaîne steréo</Box6>
+<Box7>Un fax</Box7>
+<Box8>Un lecteur de CD</Box8>
+<Box9>Un répondeur téléphonique</Box9>
+<Box10>Un télécommande</Box10>
+<Box11>Un portable</Box11>
+<Box12>Un poste de télé</Box12>
+</Version1>
+</Game2>
    <Game3>
-       <Version1>
+        <Version1>
             <Question1>
             Traduisez la phrase "You didn't turn on your CD player?"
         </Question1>

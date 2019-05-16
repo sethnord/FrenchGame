@@ -74,12 +74,17 @@ namespace FrenchGame
         private void button1_Click(object sender, EventArgs e)
         {
             //L'electronique labeling
-
+            _selGame = 0;
+            PlayGame(_selGame);
+            //MessageBox.Show("Sorry, this has not been implemented yet!", "Sorry!", MessageBoxButtons.OK);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //L'electronique translate
+            //_selGame = 1;
+            //PlayGame(_selGame);
+            MessageBox.Show("Sorry, this has not been implemented yet!", "Sorry!", MessageBoxButtons.OK);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -92,6 +97,9 @@ namespace FrenchGame
         private void button4_Click(object sender, EventArgs e)
         {
             //L'ordinateur translate
+            //_selGame = 3;
+            //PlayGame(_selGame);
+            MessageBox.Show("Sorry, this has not been implemented yet!", "Sorry!", MessageBoxButtons.OK);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -311,6 +319,8 @@ namespace FrenchGame
                 {
                     case 0:
                         //L'Electronique labelling
+                        electromatch g = new electromatch();
+                        g.Show();
                         break;
                     case 1:
                         //L'Electronique translate
