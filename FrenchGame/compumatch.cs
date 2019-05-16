@@ -37,6 +37,8 @@ namespace FrenchGame
             MessageBox.Show("In this game, each player will be shown 5 random images that they will select the correct word for. " +
                 "The player that can identify all 5 images the fastest is the winner.", "Instructions:", MessageBoxButtons.OK);
             //Select 5 random images and answers
+
+            timerLabel.Text = "0.00";
             int[] images = LoadFromXML();
             LoadImages(images); //Load the images.
             playerTime.Enabled = true;
@@ -196,10 +198,15 @@ namespace FrenchGame
         //1,5,3,2,4
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox4.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox1.Visible = false;
             if (pictureBox5.Visible)
             {
                 button1.BackColor = Color.Green;
                 pictureBox5.Visible = false;
+                pictureBox4.Visible = true;
             }
         }
 
@@ -209,6 +216,7 @@ namespace FrenchGame
             {
                 button2.BackColor = Color.Green;
                 pictureBox2.Visible = false;
+                pictureBox1.Visible = true;
             }
         }
 
@@ -218,6 +226,7 @@ namespace FrenchGame
             {
                 button3.BackColor = Color.Green;
                 pictureBox3.Visible = false;
+                pictureBox2.Visible = true;
             }
         }
 
@@ -231,6 +240,14 @@ namespace FrenchGame
                 playerTime.Enabled = false;
                 scores[scInd] = timerLabel.Text;
                 scInd++;
+                if(scInd + 1 > numPlayers)
+                {
+                    TallyResults();
+                }
+                else
+                {
+                    Start();
+                }
             }
         }
 
@@ -240,7 +257,59 @@ namespace FrenchGame
             {
                 button5.BackColor = Color.Green;
                 pictureBox4.Visible = false;
+                pictureBox3.Visible = true;
             }
+        }
+
+        private void TallyResults()
+        {
+            string p1Score = scores[0];
+            string p2Score = "0";
+            string p3Score = "0";
+            string p4Score = "0";
+            string p5Score = "0";
+            if (numPlayers > 1)
+            {
+                p2Score = scores[1];
+            }
+            if (numPlayers > 2)
+            {
+                p3Score = scores[2];
+            }
+            if (numPlayers > 3)
+            {
+                p4Score = scores[3];
+            }
+            if (numPlayers > 4)
+            {
+                p5Score = scores[4];
+            }
+            MessageBox.Show(p1Name + " , " + p1Score + "\n" + p2Name + " , " + p2Score + "\n" +
+                p3Name + " , " + p3Score + "\n" + p4Name + " , " + p4Score + "\n" + p5Name + " , " + p5Score, "Results:", MessageBoxButtons.OK);
+            Close();
+        }
+
+        public void Start()
+        {
+            button1.BackColor = Color.DarkGray;
+            button2.BackColor = Color.DarkGray;
+            button3.BackColor = Color.DarkGray;
+            button4.BackColor = Color.DarkGray;
+            button5.BackColor = Color.DarkGray;
+
+            MessageBox.Show("In this game, each player will be shown 5 random images that they will select the correct word for. " +
+               "The player that can identify all 5 images the fastest is the winner.", "Instructions:", MessageBoxButtons.OK);
+
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = true;
+
+            _time = 0.00f;
+            timerLabel.Text = "0.00";
+            playerTime.Enabled = true;
+
         }
     }
 }

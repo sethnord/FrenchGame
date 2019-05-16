@@ -16,11 +16,11 @@ namespace FrenchGame
     {
         int _selGame = -1; //If it stays -1, something went wrong.
 
-        public static string _pl1Name = "Player 1 Didn't Enter A Name";
-        public static string _pl2Name = "Player 2 Didn't Enter A Name";
-        public static string _pl3Name = "Player 3 Didn't Enter A Name";
-        public static string _pl4Name = "Player 4 Didn't Enter A Name";
-        public static string _pl5Name = "Player 5 Didn't Enter A Name";
+        public static string _pl1Name = "Player 1";
+        public static string _pl2Name = "Player 2";
+        public static string _pl3Name = "Player 3";
+        public static string _pl4Name = "Player 4";
+        public static string _pl5Name = "Player 5";
         public static int _numPlayers = 1;
 
         public Form1()
@@ -127,7 +127,6 @@ namespace FrenchGame
             button3.Hide();
             button4.Hide();
             button5.Hide();
-            button7.Hide();
             button9.Hide();
         }
 
@@ -257,12 +256,20 @@ namespace FrenchGame
                 {
                     shouldStart = false;
                 }
+                else
+                {
+                    _pl1Name = textBox5.Text;
+                }
             }
             if (_numPlayers >= 2)
             {
                 if (textBox4.Text == "")
                 {
                     shouldStart = false;
+                }
+                else
+                {
+                    _pl2Name = textBox4.Text;
                 }
             }
             if (_numPlayers >= 3)
@@ -271,6 +278,10 @@ namespace FrenchGame
                 {
                     shouldStart = false;
                 }
+                else
+                {
+                    _pl3Name = textBox3.Text;
+                }
             }
             if (_numPlayers >= 4)
             {
@@ -278,12 +289,20 @@ namespace FrenchGame
                 {
                     shouldStart = false;
                 }
+                else
+                {
+                    _pl4Name = textBox2.Text;
+                }
             }
             if (_numPlayers >= 5)
             {
                 if (textBox1.Text == "")
                 {
                     shouldStart = false;
+                }
+                else
+                {
+                    _pl5Name = textBox1.Text;
                 }
             }
             if(shouldStart == true)
@@ -305,7 +324,35 @@ namespace FrenchGame
                         //L'Ordinateur translate
                         break;
                 }
+                ShowAll();
             }
+        }
+
+        public void ShowAll()
+        {
+            label2.Show();
+            numericUpDown1.Show();
+            label3.Show();
+            button1.Show();
+            button2.Show();
+            button3.Show();
+            button4.Show();
+            button5.Show();
+            button9.Show();
+
+            textBox5.Hide();
+            label4.Hide();
+            textBox4.Hide();
+            label5.Hide();
+            textBox3.Hide();
+            label6.Hide();
+            textBox2.Hide();
+            label7.Hide();
+            textBox1.Hide();
+            label8.Hide();
+
+            label9.Hide(); //Player names
+            button8.Hide(); //Start game
         }
     }
 }
