@@ -1,5 +1,5 @@
 <xml>
-    <Game1>
+    <Game0>
      <Version1>
         <Box1>
             Un clavier
@@ -38,8 +38,8 @@
            Un jeu vidéo
         </Box12>
      </version1>
-    </Game1>
-    <Game2>
+    </Game0>
+    <Game1>
      <Version1>
         <Question1>
             Traduisez la phrase "We discovered a good software program."
@@ -222,8 +222,8 @@
             Je couvre; tu couvres; il couvre; nous couvrons; vous couvrez; ils couvrent
         </Wrong3>
         </version1>
-    </Game2>
-    <Game3>
+    </Game1>
+    <Game2>
         <version1>
         <Box1>
             Un appareil-photo
@@ -262,8 +262,8 @@
             Un poste de télé
         </Box12>
         </version1>
-   </Game3>
-   <Game4>
+   </Game2>
+   <Game3>
        <version1>
             <Question1>
             Traduisez la phrase "You didn't turn on your CD player?"
@@ -446,5 +446,5 @@
             Je compos; tu composes; il compos; nous composons; vous composez; ils composent
         </Wrong3>
        </version1>
-   </Game4>
+   </Game3>
 </xml>
