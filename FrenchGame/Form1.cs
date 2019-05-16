@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using System.Xml;
 
 namespace FrenchGame
 {
     public partial class Form1 : Form
     {
-        int selGame = -1; //If it stays -1, something went wrong.
+        int _selGame = -1; //If it stays -1, something went wrong.
 
         string _pl1Name = "Player 1 Didn't Enter A Name";
         string _pl2Name = "Player 2 Didn't Enter A Name";
@@ -95,8 +97,8 @@ namespace FrenchGame
         private void button5_Click(object sender, EventArgs e)
         {
             //Random
-            selGame = GetRan();
-            PlayGame(selGame);
+            _selGame = GetRan();
+            PlayGame(_selGame);
         }
 
         private int GetRan()
@@ -186,7 +188,52 @@ namespace FrenchGame
             //Display leaderboard
 
             //First, read leaderbord.xml
+            XmlDocument leaderboard = new XmlDocument();
+            try
+            {
+                leaderboard.Load("leaderboard.xml");
 
+                XmlNode firstPlace = leaderboard.DocumentElement.SelectSingleNode("/xml/first");
+                XmlNode secondPlace = leaderboard.DocumentElement.SelectSingleNode("/xml/second");
+                XmlNode thirdPlace = leaderboard.DocumentElement.SelectSingleNode("/xml/third");
+                XmlNode fourthPlace = leaderboard.DocumentElement.SelectSingleNode("/xml/fourth");
+                XmlNode fifthPlace = leaderboard.DocumentElement.SelectSingleNode("/xml/fifth");
+
+                //Read the names and corresponding time scores.
+                string firstName = firstPlace.Attributes["name"]?.InnerText;
+                string secondName = secondPlace.Attributes["name"]?.InnerText;
+                string thirdName = thirdPlace.Attributes["name"]?.InnerText;
+                string fourthName = fourthPlace.Attributes["name"]?.InnerText;
+                string fifthName = fifthPlace.Attributes["name"]?.InnerText;
+
+                string firstScore = firstPlace.Attributes["time"]?.InnerText;
+                string secondScore = secondPlace.Attributes["time"]?.InnerText;
+                string thirdScore = thirdPlace.Attributes["time"]?.InnerText;
+                string fourthScore = fourthPlace.Attributes["time"]?.InnerText;
+                string fifthScore = fifthPlace.Attributes["time"]?.InnerText;
+                //last, display in text box form:
+                MessageBox.Show(
+                    "1st Place: " + firstName + ", " + firstScore + " Seconds" + "\n" +
+                    "2nd Place: " + secondName + ", " + secondScore + " Seconds" + "\n" +
+                    "3rd Place: " + thirdName + ", " + thirdScore + " Seconds" + "\n" +
+                    "4th Place: " + fourthName + ", " + fourthScore + " Seconds" + "\n" +
+                    "5th Place: " + fifthName + ", " + fifthScore + " Seconds"
+                    );
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                MessageBox.Show("Could not locate leaderboard.xml- Did someone delete the file?", "Error!", MessageBoxButtons.OK);
+            }
+            catch (System.Xml.XPath.XPathException)
+            {
+                MessageBox.Show("Error reading the XML file, did someone edit it?", "Error!", MessageBoxButtons.OK);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Error reading the XML file, did someone edit it?", "Error!", MessageBoxButtons.OK);
+            }
+
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -198,6 +245,65 @@ namespace FrenchGame
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             _numPlayers = (int)numericUpDown1.Value;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            bool shouldStart = true;
+            //Make sure all the text boxes are filled, then start the right game
+            if(_numPlayers >= 1)
+            {
+                if(textBox5.Text == "")
+                {
+                    shouldStart = false;
+                }
+            }
+            if (_numPlayers >= 2)
+            {
+                if (textBox4.Text == "")
+                {
+                    shouldStart = false;
+                }
+            }
+            if (_numPlayers >= 3)
+            {
+                if (textBox3.Text == "")
+                {
+                    shouldStart = false;
+                }
+            }
+            if (_numPlayers >= 4)
+            {
+                if (textBox2.Text == "")
+                {
+                    shouldStart = false;
+                }
+            }
+            if (_numPlayers >= 5)
+            {
+                if (textBox1.Text == "")
+                {
+                    shouldStart = false;
+                }
+            }
+            if(shouldStart == true)
+            {
+                switch (_selGame)
+                {
+                    case 0:
+                        //L'Electronique labelling
+                        break;
+                    case 1:
+                        //L'Electronique translate
+                        break;
+                    case 2:
+                        //L'Ordinateur labelling
+                        break;
+                    case 3:
+                        //L'Ordinateur translate
+                        break;
+                }
+            }
         }
     }
 }

@@ -292,6 +292,7 @@
             this.button8.TabIndex = 21;
             this.button8.Text = "START GAME!";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label9
             // 
